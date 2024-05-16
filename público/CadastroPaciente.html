@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP WEB - AULA 2 PPI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container b-5">
+        <h1>INSIRA OS DADOS DO PACIENTE</h1>
+        <br />
+        <form method="GET" action='/cadastrarPaciente' class="border needs-validation" novalidate>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="Nome">Nome</label>
+                    <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Nome">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Sobrenome">Sobrenome</label>
+                    <input type="text" class="form-control" id="Sobrenome" name="Sobrenome" placeholder="Sobrenome">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" name="Email" placeholder="seu-email@exemplo.com">
+                <label for="cell">Telefone</label>
+                <input type="tel" class="form-control" name="Telefone" id="cell" placeholder="(00) 00000-0000">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Endereço</label>
+                <input type="text" class="form-control" id="inputAddress" name="Endereço" placeholder="Rua, Número, CEP">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" name="Cidade" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">Estado</label>
+                    <select id="inputState" name="Estado" class="form-control">
+                        <option selected>Escolha</option>
+                        <option>São Paulo</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Minas Gerais</option>
+                        <option>Paraná</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Santa Catarina</option>
+                        <option>Mato Grosso do Sul</option>
+                        <option>Espírito Santo</option>
+                        <option>Goías</option>
+                        <option>Cuiabá</option>
+                        <option>Bahia</option>
+                        <option>Rondônia</option>
+                        <option>Acre</option>
+                        <option>Amazonas</option>
+                        <option>Pará</option>
+                        <option>Tocantins</option>
+                        <option>Sergipe</option>
+                        <option>Alagoas</option>
+                        <option>Pernambuco</option>
+                        <option>Paraíba</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Ceará</option>
+                        <option>Piauí</option>
+                        <option>Maranhão</option>
+                        <option>Mato Grosso</option>
+                        <option>Roraima</option>
+                        <option>Amapá</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputCPF">CPF</label>
+                    <input type="text" name="CPF" class="form-control" id="inputCPF" placeholder="000.000.000-00">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <a class="btn btn-second" href="index.html">Voltar</a>
+        </form>
+    </div>
+</body>
+</html>
